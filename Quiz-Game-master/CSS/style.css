@@ -1,0 +1,30 @@
+.main{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hide{
+    display: none;
+}
+.start_btn{
+    color: yellow;
+    background-color: red;
+}
+.start_btn:hover{
+    color: red;
+    background-color: yellow
+}
+.next_btn{
+    color: red;
+    background-color: yellow
+}
+.next_btn:hover{
+    color: yellow;
+    background-color: red;
+}
+.scoreCard_wrapper{
+    padding: 25px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px #332e6418;
+}

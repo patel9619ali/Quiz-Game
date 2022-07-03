@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <title>QUIZ-GAME</title>            
+  </head>
+  <body>
+    <h1 class="text-center">Welcome to My Quiz Land.</h1>
+      <section class="main position-absolute">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="btn start_btn p-3" id="start_btn">Click Here to Start.</div>
+            </div>
+          </div>
+          <div class="row hide" id="quiz_wrapper">
+            <div class="col-md-12">
+              <div class="quiz_container">
+                <div class="question" id="question">
+                  <h3 id="question_match">This is the First Question</h3>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="countDownTime">
+                            Your Time Starts Now <span class="stope_watch" id="stop_watch"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input answer" type="radio" name="flexRadioDefault" value="a" id="answer1">
+                  <label class="form-check-label" for="answer1" id="option1"></label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input answer" type="radio" name="flexRadioDefault" value="b" id="answer2">
+                  <label class="form-check-label" for="answer2" id="option2"></label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input answer" type="radio" name="flexRadioDefault" value="c" id="answer3">
+                  <label class="form-check-label" for="answer3" id="option3"></label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input answer" type="radio" name="flexRadioDefault" value="d" id="answer4">
+                  <label class="form-check-label" for="answer4" id="option4"></label>
+                </div>
+                <div class="btn next_btn p-3 mt-3" id="next_btn">Next Question.</div>
+              </div>
+            </div>
+          </div>
+          <div class="scoreCard_wrapper d-none" id="score_card">
+            <div class="row">
+              <div class="col-12">
+                <p class="text-center">You Scored</p>
+                <p class="text-center"><span id="actual_score"></span>/<span id="out_of_score"></span></p>
+                <p class="text-center" id="happy-emoji">&#128512;</p>
+                <p class="text-center" id="sad-emoji">&#128532;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="JS/vendor.js"></script>
+  </body>
+</html>

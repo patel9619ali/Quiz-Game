@@ -22,7 +22,7 @@
     color: yellow;
     background-color: red;
 }
-.scoreCard_wrapper{
+.scoreCard_wrapper , #quiz_wrapper{
     padding: 25px 10px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -33,4 +33,16 @@
 }
 #sad-emoji{
     display: none;
+}
+.progress_bar{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: grey;
+}
+.progress_bar_inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: green;
 }
